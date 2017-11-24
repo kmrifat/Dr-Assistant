@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="684.0" prefWidth="943.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.patient.PatientHistoryController">
+   <children>
+      <BorderPane layoutX="372.0" layoutY="242.0" prefHeight="684.0" prefWidth="943.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <ListView fx:id="prescriptionList" onKeyReleased="#handleKeyboard" onMouseClicked="#handle" prefHeight="684.0" prefWidth="209.0" stylesheets="@../../css/main.css" BorderPane.alignment="CENTER" />
+         </left>
+         <center>
+            <StackPane fx:id="spPrescription" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="658.0" prefWidth="976.0" stylesheets="@../../css/main.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.patient.PatientsController">
+   <children>
+      <BorderPane layoutX="388.0" layoutY="229.0" prefHeight="658.0" prefWidth="976.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <ScrollPane fx:id="scrollPan" hbarPolicy="NEVER" BorderPane.alignment="CENTER">
+               <content>
+                  <FlowPane fx:id="flowPane" hgap="10.0" prefHeight="414.0" prefWidth="938.0" vgap="10.0">
+                     <padding>
+                        <Insets left="13.0" top="13.0" />
+                     </padding>
+                     <children>
+                        <Label prefHeight="118.0" prefWidth="426.0" text="Loading........................................." textFill="#bc1515" />
+                     </children>
+                  </FlowPane>
+               </content></ScrollPane>
+         </center>
+         <top>
+            <BorderPane prefHeight="56.0" prefWidth="976.0" BorderPane.alignment="CENTER">
+               <right>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="56.0" prefWidth="190.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#newPatientOnAction" prefHeight="54.0" prefWidth="180.0" styleClass="addButton" text="         Add Patient">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin></Button>
+                     </children>
+                  </HBox>
+               </right>
+               <center>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TextField fx:id="tfSearch" onAction="#searchPatientOnAction" prefHeight="25.0" prefWidth="365.0" promptText="Search patient by phone,email or name" />
+                        <Button mnemonicParsing="false" onAction="#handleSearchButton" text="Search" />
+                     </children>
+                  </HBox>
+               </center>
+            </BorderPane>
+         </top>
+         <bottom>
+            <BorderPane prefHeight="42.0" prefWidth="976.0" BorderPane.alignment="CENTER">
+               <right>
+                  <Button mnemonicParsing="false" onAction="#handleNextButton" text="Next &gt;" BorderPane.alignment="CENTER" />
+               </right>
+               <left>
+                  <Button mnemonicParsing="false" onAction="#handlePrevButton" text="&lt; Prev" BorderPane.alignment="CENTER" />
+               </left>
+               <center>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="lblTotalPatient" text="Total 28" />
+                        <Label fx:id="lblShowingPatient" text="Shoing 0 to 10" />
+                     </children>
+                  </HBox>
+               </center>
+            </BorderPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

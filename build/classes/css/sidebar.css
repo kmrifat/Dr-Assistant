@@ -1,0 +1,100 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 20, 2017, 5:18:31 PM
+    Author     : RIfat
+*/
+
+.sidebar{
+    -fx-background-color: #282E34;
+}
+
+.sidebar .button{
+    -fx-background-color: none;
+    -fx-text-fill:  #4E4F52;
+    -fx-font-weight:700;
+    -fx-font-size:16px;
+    -fx-font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    -fx-border-width: 0px 0px 0px 7px;
+}
+
+.sidebar .button:hover{
+    -fx-border-color: #EA5444;
+    -fx-border-width: 0px 0px 0px 7px;
+    -fx-border-radius: 0px;
+    -fx-text-fill: #EA5444;
+}
+
+#home{
+    -fx-background-image: url("../icon/home.png");
+    -fx-background-size: 40px 40px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 55% 30%;
+}
+
+#home:hover{
+    -fx-background-image: url("../icon/homeRed.png");
+}
+
+.home-active{
+    -fx-background-image: url("../icon/homeRed.png");
+}
+
+#setting{
+    -fx-background-image: url("../icon/settings.png");
+    -fx-background-size: 40px 40px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 55% 30%;
+}
+
+#setting:hover{
+    -fx-background-image: url("../icon/settingsRed.png");
+}
+
+#patient{
+    -fx-background-image: url("../icon/patient.png");
+    -fx-background-size: 40px 40px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 55% 30%;
+}
+
+#patient:hover{
+    -fx-background-image: url("../icon/patientRed.png");
+}
+
+
+#drug{
+    -fx-background-image: url("../icon/drug.png");
+    -fx-background-size: 40px 40px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 55% 30%;
+}
+
+#drug:hover{
+    -fx-background-image: url("../icon/drugRed.png");
+}
+
+#prescription{
+    -fx-background-image: url("../icon/prescription.png");
+    -fx-background-size: 40px 40px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 55% 30%;
+}
+
+#prescription:hover, #prescription:active{
+    -fx-background-image: url("../icon/prescriptionRed.png");
+}
+
+#template{
+    -fx-background-image: url("../icon/template.png");
+    -fx-background-size: 40px 40px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 55% 30%;
+}
+
+#template:hover, #template:active{
+    -fx-background-image: url("../icon/templateRed.png");
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="728.0" prefWidth="992.0" stylesheets="@../../css/main.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="controller.prescription.ViewPrescriptionController">
+   <children>
+      <BorderPane layoutX="396.0" layoutY="252.0" prefHeight="728.0" prefWidth="992.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox alignment="CENTER" prefHeight="49.0" prefWidth="992.0" spacing="25.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="200.0">
+                     <children>
+                        <Label fx:id="lblPatientName" text="Patient Name" />
+                        <Label fx:id="lblDate" text="Date" />
+                     </children>
+                  </VBox>
+                  <Button defaultButton="true" mnemonicParsing="false" onAction="#handlePrintButton" prefHeight="47.0" prefWidth="82.0" text="Print">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <WebView fx:id="webView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

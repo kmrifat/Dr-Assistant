@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="596.0" prefWidth="1293.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeContentController">
+   <children>
+      <BorderPane layoutX="347.0" layoutY="181.0" prefHeight="588.0" prefWidth="893.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox alignment="CENTER" prefHeight="76.0" prefWidth="893.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Home ">
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+         </top>
+         <bottom>
+            <HBox alignment="CENTER_LEFT" prefHeight="22.0" prefWidth="893.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Status " />
+               </children>
+            </HBox>
+         </bottom>
+         <center>
+            <FlowPane hgap="10.0" prefHeight="200.0" prefWidth="200.0" vgap="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="251.0" prefWidth="368.0">
+                     <children>
+                        <BorderPane layoutX="70.0" layoutY="26.0" prefHeight="251.0" prefWidth="368.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <top>
+                              <HBox alignment="CENTER" prefHeight="55.0" prefWidth="368.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="32.0" prefWidth="287.0" style="-fx-font-size: 22px;" text="Total Patient" />
+                                 </children>
+                              </HBox>
+                           </top>
+                           <center>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Text fx:id="lblTotalPatient" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                       <font>
+                                          <Font size="96.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                           </center>
+                           <bottom>
+                              <StackPane prefHeight="51.0" prefWidth="368.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Button defaultButton="true" mnemonicParsing="false" onAction="#handleNewPatient" prefHeight="50.0" prefWidth="368.0" style="-fx-font-size: 22px;" text="Add new patient" />
+                                 </children>
+                              </StackPane>
+                           </bottom>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="251.0" prefWidth="368.0">
+                     <children>
+                        <BorderPane layoutX="70.0" layoutY="26.0" prefHeight="251.0" prefWidth="368.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <top>
+                              <HBox alignment="CENTER" prefHeight="55.0" prefWidth="368.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="26.0" prefWidth="241.0" style="-fx-font-size: 22px;" text="Total Drugs" />
+                                 </children>
+                              </HBox>
+                           </top>
+                           <center>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Text fx:id="lblTotalDrug" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                       <font>
+                                          <Font size="96.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                           </center>
+                           <bottom>
+                              <StackPane prefHeight="51.0" prefWidth="368.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Button defaultButton="true" mnemonicParsing="false" onAction="#handleNewDrug" prefHeight="50.0" prefWidth="368.0" style="-fx-font-size: 22px;" text="Add New Drugu" />
+                                 </children>
+                              </StackPane>
+                           </bottom>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="378.0" layoutY="10.0" prefHeight="251.0" prefWidth="368.0">
+                     <children>
+                        <BorderPane layoutX="70.0" layoutY="26.0" prefHeight="251.0" prefWidth="368.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <top>
+                              <HBox alignment="CENTER" prefHeight="55.0" prefWidth="368.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label style="-fx-font-size: 22px;" text="Total Prescription" />
+                                 </children>
+                              </HBox>
+                           </top>
+                           <center>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Text fx:id="lblTotalPrescription" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                       <font>
+                                          <Font size="89.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                           </center>
+                           <bottom>
+                              <StackPane prefHeight="51.0" prefWidth="368.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Button defaultButton="true" mnemonicParsing="false" onAction="#handleNewPrescription" prefHeight="50.0" prefWidth="368.0" style="-fx-font-size: 22px;" text="Wriite  New Prescription" />
+                                 </children>
+                              </StackPane>
+                           </bottom>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="261.0" prefHeight="251.0" prefWidth="368.0">
+                     <children>
+                        <BorderPane layoutX="70.0" layoutY="26.0" prefHeight="251.0" prefWidth="368.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <top>
+                              <HBox alignment="CENTER" prefHeight="55.0" prefWidth="368.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label style="-fx-font-size: 22px;" text="Total Templates" />
+                                 </children>
+                              </HBox>
+                           </top>
+                           <center>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Text fx:id="lblTotalTemplate" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                       <font>
+                                          <Font size="96.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                           </center>
+                           <bottom>
+                              <StackPane prefHeight="51.0" prefWidth="368.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Button defaultButton="true" mnemonicParsing="false" onAction="#handleNewPrescriptionTemplate" prefHeight="50.0" prefWidth="368.0" style="-fx-font-size: 22px;" text="Create new prescription template" />
+                                 </children>
+                              </StackPane>
+                           </bottom>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="378.0" layoutY="261.0" prefHeight="251.0" prefWidth="368.0" visible="false">
+                     <children>
+                        <BorderPane layoutX="70.0" layoutY="26.0" prefHeight="251.0" prefWidth="368.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <top>
+                              <HBox alignment="CENTER" prefHeight="55.0" prefWidth="368.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label text="Total Patient" />
+                                 </children>
+                              </HBox>
+                           </top>
+                           <center>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                                 </children>
+                              </HBox>
+                           </center>
+                           <bottom>
+                              <StackPane prefHeight="51.0" prefWidth="368.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Button defaultButton="true" mnemonicParsing="false" prefHeight="50.0" prefWidth="368.0" style="-fx-font-size: 22px;" text="Add new patient" />
+                                 </children>
+                              </StackPane>
+                           </bottom>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <BorderPane.margin>
+                  <Insets left="15.0" />
+               </BorderPane.margin>
+            </FlowPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

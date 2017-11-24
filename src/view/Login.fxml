@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="708.0" prefWidth="1085.0" styleClass="login" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="drassistant.LoginController">
+   <children>
+      <BorderPane layoutX="369.0" layoutY="247.0" prefHeight="694.0" prefWidth="938.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="708.0" prefWidth="647.0" stylesheets="@../css/main.css">
+                     <children>
+                        <AnchorPane prefHeight="309.0" prefWidth="599.0" styleClass="logn-card">
+                           <children>
+                              <AnchorPane layoutX="318.0" layoutY="7.0" prefHeight="292.0" prefWidth="311.0" style="-fx-background-color: #fff;">
+                                 <children>
+                                    <GridPane hgap="5.0" layoutX="16.0" layoutY="108.0" prefHeight="139.0" prefWidth="307.0" vgap="10.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <TextField fx:id="tfUserName" promptText="User name" GridPane.columnSpan="2" />
+                                          <PasswordField fx:id="pfPassword" promptText="Password" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                                          <Button fx:id="btnLogin" defaultButton="true" mnemonicParsing="false" onAction="#btnLoginOnAction" text="Login" GridPane.rowIndex="2">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" />
+                                             </GridPane.margin>
+                                          </Button>
+                                          <Hyperlink onAction="#hlForgetPassword" text="Forget your password ?" visible="false" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+                                       </children>
+                                    </GridPane>
+                                    <Text layoutX="58.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIGN IN">
+                                       <font>
+                                          <Font name="System Bold" size="40.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                              <Label layoutX="7.0" layoutY="7.0" prefHeight="41.0" prefWidth="310.0" styleClass="dr-assistant" text="Dr Assistant" />
+                              <Label layoutX="176.0" layoutY="44.0" style="-fx-background-color: #fff; -fx-text-fill: orangered;" text="Community edition" />
+                              <AnchorPane layoutX="7.0" layoutY="61.0" prefHeight="238.0" prefWidth="310.0" style="-fx-background-color: #fff;">
+                                 <children>
+                                    <Text layoutX="7.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thank you so much for  choosing Dr.Assistant" wrappingWidth="290.0">
+                                       <font>
+                                          <Font name="System Italic" size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Button layoutX="22.0" layoutY="184.0" mnemonicParsing="false" onAction="#handleTryButton" styleClass="try-button" text="Try Dr Assistant Online Edition">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Text layoutX="7.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dr.Assistant is an open source software, " wrappingWidth="290.0">
+                                       <font>
+                                          <Font name="System Italic" size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="5.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="That designed for doctors so they can write prescription easily and track all the prescription by patient. So, it will be easy to identify patient complains" wrappingWidth="290.0">
+                                       <font>
+                                          <Font name="System Italic" size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

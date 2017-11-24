@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="437.0" style="-fx-background-color: #fff;" styleClass="donate" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.other.DonateController">
+   <children>
+      <Label layoutX="20.0" layoutY="26.0" text="Love this project ?">
+         <font>
+            <Font name="Constantia Bold" size="30.0" />
+         </font>
+      </Label>
+      <Text layoutX="33.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="There are so many open-source project has been dead for lack of support. If you like Dr.Assistant (Desktop Edition) and want me to develop it up to date." wrappingWidth="366.294921875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="33.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Support Dr.Assistant (Desktop Edition)">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="105.0" fitWidth="175.0" layoutX="122.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/paysafe.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="112.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can send your donation via">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="139.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To :" />
+      <TextField editable="false" layoutX="160.0" layoutY="330.0" style="-fx-background-color: none;" text="kmrifat@gmail.com" />
+   </children>
+</AnchorPane>
